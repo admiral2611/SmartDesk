@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SmartDesk</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_logo">main logo</string>
+    <string name="skip">Skip</string>
+    <string name="todo">TODO</string>
+    <string name="empower_your_mind_with_us">Empower Your Mind with Us</string>
+    <string name="lorem_ipsum_dolor_sit_amet_a_aconsectetur_ut_proin_accumsan_be">Lorem ipsum dolor sit amet a aconsectetur. Ut proin accumsan be</string>
+    <string name="ic_next">ic next</string>
+    <string name="discover_your_path_to_knowledge">Discover Your Path to Knowledge</string>
+    <string name="unlock_your_learning_potential">Unlock Your Learning Potential</string>
+    <string name="dive_into_your_first_lesson">Dive into Your First Lesson!</string>
+    <string name="smart_desk">Smart Desk</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="background_image">Background Image</string>
+    <string name="icon_onboard">icon_onboard</string>
+    <string name="join_the_smart_desk_community">Join the Smart Desk Community</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="register">REGISTER</string>
+    <string name="register_now">Register Now</string>
+    <string name="email_address">Email Address</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="or_register_with">Or Register With</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="already_have_an_account">Already Have an Account? </string>
+    <string name="sign_in_here">Sign In Here</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="or_sign_in_with">Or Sign In With</string>
+    <string name="don_t_have_an_account">Don’t Have an Account?</string>
+    <string name="register_her">Register Her</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="send_code">SEND CODE</string>
+    <string name="remember_password">Remember Password ?</string>
+</resources>

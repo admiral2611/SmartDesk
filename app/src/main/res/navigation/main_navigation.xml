@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.admiral26.smartdesk.ui.splash_and_onboarding_screens.SplashScreen"
+        android:label="splash_screen"
+        tools:layout="@layout/splash_screen">
+        <action
+            android:id="@+id/action_splashScreen_to_onboardScreen1"
+            app:destination="@id/onboardScreen1" />
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardScreen1"
+        android:name="com.admiral26.smartdesk.ui.splash_and_onboarding_screens.onboard.OnboardScreen1"
+        android:label="screen1_onboard"
+        tools:layout="@layout/screen1_onboard">
+        <action
+            android:id="@+id/action_onboardScreen1_to_onboardScreen2"
+            app:destination="@id/onboardScreen2" />
+        <action
+            android:id="@+id/action_onboardScreen1_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardScreen2"
+        android:name="com.admiral26.smartdesk.ui.splash_and_onboarding_screens.onboard.OnboardScreen2"
+        android:label="screen2_onboard"
+        tools:layout="@layout/screen2_onboard">
+        <action
+            android:id="@+id/action_onboardScreen2_to_onboardScreen3"
+            app:destination="@id/onboardScreen3" />
+        <action
+            android:id="@+id/action_onboardScreen2_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <argument
+            android:name="progressNum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardScreen3"
+        android:name="com.admiral26.smartdesk.ui.splash_and_onboarding_screens.onboard.OnboardScreen3"
+        android:label="screen3_onboard"
+        tools:layout="@layout/screen3_onboard">
+        <action
+            android:id="@+id/action_onboardScreen3_to_onboardScreen4"
+            app:destination="@id/onboardScreen4" />
+        <action
+            android:id="@+id/action_onboardScreen3_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <argument
+            android:name="progressNum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardScreen4"
+        android:name="com.admiral26.smartdesk.ui.splash_and_onboarding_screens.onboard.OnboardScreen4"
+        android:label="screen4_onboard"
+        tools:layout="@layout/screen4_onboard">
+        <action
+            android:id="@+id/action_onboardScreen4_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <argument
+            android:name="progressNum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.admiral26.smartdesk.ui.main.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main" />
+</navigation>

@@ -1,0 +1,85 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.hilt)
+    id 'kotlin-kapt'
+//    alias(libs.plugins.android.lib)
+    id 'androidx.navigation.safeargs.kotlin'
+    //id 'com.google.dagger.hilt.android'
+}
+
+android {
+    namespace 'com.admiral26.smartdesk'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.admiral26.smartdesk"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        viewBinding.enable = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+
+    //coil
+    implementation libs.coil
+
+    //response size
+    implementation libs.sdp.android
+    implementation libs.ssp.android
+
+    //multi dex
+    implementation libs.androidx.multidex
+
+    // ViewBinding
+    implementation libs.viewbindingpropertydelegate.noreflection
+
+    // Navigation Fragment
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+
+    // Dagger Hilt
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+
+    implementation libs.material
+
+    // SecureSharedPreference
+    implementation libs.secure.preferences.lib
+
+
+    //otp view
+    implementation libs.otpview
+
+}
