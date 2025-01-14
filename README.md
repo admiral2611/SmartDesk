@@ -1,0 +1,2 @@
+Bu project asosan dasturlashni organayotgan bolajak dasturchilar uchun moljalangan bolib alghoritm va shunga ohshash masalar boyicha savollar va javoblar bolib dasturchilar ucun kotta yordam tegadi 
+Hozirgi versiyada faqat kotlin dasturlash tili uchun algorithm masalar bolib faqatgina oqish uchun moljalangan keyingi version larda qolgan tillar uchunham alghorthm masalalar boladi va online compilyator boladi
